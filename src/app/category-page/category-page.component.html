@@ -1,0 +1,21 @@
+<!-- category-page.component.html -->
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="side" [(opened)]="isMenuOpen" position="start">
+    <mat-nav-list>
+      <!-- Iterar sobre las categorías y mostrarlas -->
+      <a
+        mat-list-item
+        *ngFor="let category of categories; let i = index"
+        [routerLink]="['/category', i + 1]"
+      >
+        {{ category }}
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="category-container">
+      <h1>Página de la Categoría {{ categoryId }}</h1>
+      <p>Aquí puedes ver los productos de la Categoría {{ categoryId }}.</p>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

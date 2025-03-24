@@ -1,0 +1,44 @@
+<!-- header.component.html -->
+<mat-toolbar color="primary">
+  <button mat-icon-button (click)="toggleMenu()">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <!-- Texto "E-CommerceApp" con routerLink -->
+  <a routerLink="/" style="text-decoration: none; color: inherit;">
+    <h1>E-CommerceApp</h1>
+  </a>
+
+  <span class="spacer"></span>
+
+  <mat-form-field appearance="outline">
+    <input
+      matInput
+      [(ngModel)]="searchQuery"
+      placeholder="Buscar productos..."
+      (keyup.enter)="onSearch()"
+    />
+    <mat-icon matSuffix>search</mat-icon>
+  </mat-form-field>
+
+  <!-- Botones de navegación -->
+  <button mat-button routerLink="/login">
+    <mat-icon>login</mat-icon>
+    Login
+  </button>
+
+  <button mat-button routerLink="/my-purchases">
+    <mat-icon>shopping_basket</mat-icon>
+    My Purchases
+  </button>
+
+  <button mat-button routerLink="/my-likes">
+    <mat-icon>favorite</mat-icon>
+    My Likes
+  </button>
+
+  <button mat-button routerLink="/cart">
+    <mat-icon>shopping_cart</mat-icon>
+    Cart
+  </button>
+</mat-toolbar>

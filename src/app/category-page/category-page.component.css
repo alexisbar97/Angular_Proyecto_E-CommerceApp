@@ -1,0 +1,22 @@
+/* category-page.component.css */
+mat-sidenav-container {
+  height: calc(100vh - 60px); /* Ajusta la altura para que no se superponga con el header */
+}
+
+mat-sidenav {
+  width: 250px;
+  background-color: white; /* Color primario de Angular Material */
+  height: calc(100vh - 60px); /* Ajusta la altura para que no se superponga con el header */
+}
+
+mat-nav-list a {
+  color: white; /* Color del texto de las categorías */
+}
+
+mat-nav-list a:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Efecto hover en las categorías */
+}
+
+.category-container {
+  margin-left: 50px; /* Añade un margen izquierdo para separar el contenido del menú */
+}

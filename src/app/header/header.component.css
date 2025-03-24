@@ -1,0 +1,86 @@
+/* header.component.css */
+
+/* Estilos generales del mat-toolbar */
+mat-toolbar {
+  position: fixed; /* Fija el header en la parte superior */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  height: 120px; /* Altura aumentada del header */
+  padding: 0 24px; /* Padding horizontal */
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: space-between; /* Distribuye el espacio entre los elementos */
+}
+
+/* Estilos del título */
+mat-toolbar h1 {
+  font-size: 24px; /* Tamaño de fuente más grande */
+  margin: 0; /* Elimina el margen predeterminado */
+  font-weight: 500; /* Grosor de la fuente */
+}
+
+/* Estilos del botón del menú */
+mat-toolbar button[mat-icon-button] {
+  margin-right: 10px; /* Margen derecho para separar del título */
+}
+
+/* Estilos del campo de búsqueda */
+mat-form-field {
+  margin-left: 20px; /* Margen izquierdo para separar del título */
+  width: 400px; /* Ancho reducido */
+  height: 40px; /* Altura reducida */
+}
+
+/* Estilos del input dentro del campo de búsqueda */
+mat-form-field .mat-input-element {
+  font-size: 14px; /* Tamaño de fuente más pequeño */
+  padding: 6px 0; /* Padding vertical */
+}
+
+/* Estilos del icono de búsqueda */
+mat-form-field .mat-icon {
+  font-size: 18px; /* Tamaño del icono más pequeño */
+  width: 18px;
+  height: 18px;
+  color: rgba(0, 0, 0, 0.54); /* Color del icono más suave */
+}
+
+/* Estilos del placeholder */
+mat-form-field .mat-form-field-label {
+  font-size: 12px; /* Tamaño del placeholder más pequeño */
+  color: rgba(0, 0, 0, 0.54); /* Color del placeholder más suave */
+}
+
+/* Estilos del borde del campo de búsqueda */
+mat-form-field .mat-form-field-outline {
+  border-radius: 20px; /* Bordes redondeados */
+  border-color: rgba(0, 0, 0, 0.12); /* Color del borde más suave */
+}
+
+/* Estilos del borde cuando el campo está enfocado */
+mat-form-field .mat-form-field-outline-thick {
+  border-color: #3f51b5; /* Color primario de Angular Material */
+}
+
+/* Estilos de los botones de navegación (Login, My Purchases, etc.) */
+mat-toolbar button[mat-button] {
+  font-size: 14px; /* Tamaño de fuente para los botones */
+  padding: 8px 16px; /* Padding para los botones */
+  margin-left: 10px; /* Margen izquierdo para separar los botones */
+}
+
+/* Estilos del ícono dentro de los botones */
+mat-toolbar button[mat-button] mat-icon {
+  margin-right: 8px; /* Margen derecho para separar el ícono del texto */
+}
+
+/* Estilos del spacer (para alinear elementos a la derecha) */
+.spacer {
+  flex: 1 1 auto; /* Ocupa el espacio restante */
+}
+
+button[mat-icon-button] {
+  margin-right: 10px;
+}
